@@ -25,7 +25,7 @@ SSH Port: 2200
 ## How to Access Linux Server
 * With given key and password
     ```
-    ssh grader@3.17.184.40 -p 2200 -i GraderPublicKey
+    ssh grader@3.17.184.40 -p 2200 -i GraderPrivateKey
     ```
 
 ## Configuration
@@ -87,7 +87,7 @@ SSH Port: 2200
 	```
     ssh-keygen
     ```
-* name key pairs (e.g. GraderPublicKey)
+* name key pairs (e.g. GraderPrivateKey)
 * enter passphrase
 
 #### Publish key pairs
@@ -115,7 +115,7 @@ SSH Port: 2200
     ```
 
 #### Login with key pairs
-1. ssh grader@3.17.184.40 -p 2200 -i GraderPublicKey
+1. ssh grader@3.17.184.40 -p 2200 -i GraderPrivateKey
 2. enter passphrase
 
 #### Disable password-based login & root login, and change port to 2200
@@ -330,3 +330,11 @@ sudo timedatectl set-timezone UTC
     service apache2 reload
     service apache2 restart
     ```
+
+## References
+1. [sites-enabled and sites-avaiable](https://www.linode.com/community/questions/6592/sites-enabled-and-sites-available-confusion)
+2. [Flask ImportError: No Module Named Flask](https://stackoverflow.com/questions/31252791/flask-importerror-no-module-named-flask)
+3. [wsgi](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
+4. [How To Deploy a Flask Application on an Ubuntu VPS ](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
+5. [Python3 + venv + wsgi implementation](https://github.com/jungleBadger/-nanodegree-linux-server-troubleshoot/tree/master/python3%2Bvenv%2Bwsgi)
+6. [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
