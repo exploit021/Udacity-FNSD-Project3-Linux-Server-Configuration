@@ -8,22 +8,22 @@ Take a baseline installation of a Linux server and prepare it to host your web a
 
 In this project, I use Amazon Lightsail to host an instance of a Ubuntu Linux server in the cloud:
 ```
-IP: 3.17.184.40
+IP: 3.17.184.40 (no longer works)
 SSH Port: 2200
 ```
 
 ## How to Access Website
 * For server
     ```
-    http://3.17.184.40
+    http://3.17.184.40 (no longer works)
     ```
 * For server with google auth (facebook won't work on http)
     ```
-    http://3.17.184.40.xip.io
+    http://3.17.184.40.xip.io (no longer works)
     ```
 
 ## How to Access Linux Server
-* With given key and password
+* With given key and password (no longer works)
     ```
     ssh grader@3.17.184.40 -p 2200 -i GraderPrivateKey
     ```
@@ -114,7 +114,7 @@ SSH Port: 2200
     chmod 644 .ssh/authorized_keys
     ```
 
-#### Login with key pairs
+#### Login with key pairs (no longer works)
 1. ssh grader@3.17.184.40 -p 2200 -i GraderPrivateKey
 2. enter passphrase
 
@@ -296,7 +296,7 @@ sudo timedatectl set-timezone UTC
     ```
     sudo nano /etc/apache2/sites-available/catalog.conf
     ```
-2. Add
+2. Add (3.17.184.40 no longer works)
     ```
     <VirtualHost *:80>
             ServerName 3.17.184.40
